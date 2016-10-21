@@ -74,7 +74,7 @@ export default class Presentation extends React.Component {
               <b>Preact</b> Briefly
             </Heading>
             <List>
-              <Appear><ListItem>9k (minified) alternative to React with the same ES2015 API</ListItem></Appear>
+              <Appear><ListItem>9k (minified) alternative to <b>React</b> with the same ES2015 API</ListItem></Appear>
               <Appear><ListItem>No <code>React.createClass</code> or <code>propTypes</code> by default!</ListItem></Appear>
               <Appear><ListItem>Works with JSX after adjusting</ListItem></Appear>
               <Appear><ListItem><code>{`<input value={text} onInput={this.linkState('text')} />`}</code></ListItem></Appear>
@@ -104,7 +104,7 @@ export default class Presentation extends React.Component {
               <b>react-lite</b> Briefly
             </Heading>
             <List>
-              <Appear><ListItem>25k (minified) alternative to React with the same ES2015 API including <code>React.createClass</code></ListItem></Appear>
+              <Appear><ListItem>25k (minified) alternative to <b>React</b> with the same ES2015 API including <code>React.createClass</code></ListItem></Appear>
               <Appear><ListItem>No <code>propTypes</code>!</ListItem></Appear>
               <Appear><ListItem>Works only with JSX toolchain</ListItem></Appear>
               <Appear><ListItem><b>react-tap-event-plugin</b> and <b>transform-react-inline-elements</b> gotchas</ListItem></Appear>
@@ -123,7 +123,7 @@ export default class Presentation extends React.Component {
               <b>Inferno</b> Briefly
             </Heading>
             <List>
-              <Appear><ListItem>Performance oriented evolution over React - diffs only dynamic values</ListItem></Appear>
+              <Appear><ListItem>Performance oriented evolution over <b>React</b> - diffs only dynamic values</ListItem></Appear>
               <Appear><ListItem>Similar ES2015 API as in React</ListItem></Appear>
               <Appear><ListItem>Universal rendering supported</ListItem></Appear>
               <Appear><ListItem>More powerful stateless components than in React thanks to hooks</ListItem></Appear>
@@ -180,7 +180,7 @@ export default class Presentation extends React.Component {
               Conclusion
             </Heading>
             <List>
-              <Appear><ListItem>DOM only! Vanilla React still for React Native etc.</ListItem></Appear>
+              <Appear><ListItem>DOM only! Vanilla <b>React</b> still for React Native etc.</ListItem></Appear>
               <Appear><ListItem>Test well to find the gotchas (missing APIs etc.)</ListItem></Appear>
               <Appear><ListItem>If size is a concern, consider these alternatives</ListItem></Appear>
               <Appear><ListItem>Also great for small proof of concepts</ListItem></Appear>
