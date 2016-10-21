@@ -64,124 +64,109 @@ export default class Presentation extends React.Component {
           </Slide>
 
           <Slide transition={slideTransition}>
-            <Heading caps fit size={1}>
-              JavaScript Usage on Sites
+            <Heading size={1} fit caps lineHeight={1} textColor="tertiary">
+              <Link href="https://preactjs.com/">Preact</Link>
             </Heading>
-            <Markdown>
-          {`
-* 2011 - 38.2%
-* 2013 - 60.4%
-* 2015 - 70.5%
-* 2016 - 73.5%
-* Source: [W3Techs](http://w3techs.com/technologies/history_overview/javascript_library/all/y)
-          `}
-            </Markdown>
-          </Slide>
-
-          <Slide transition={slideTransition}>
-            <Appear fid="1">
-              <Heading size={2} caps fit>
-                Inline JavaScript
-              </Heading>
-            </Appear>
-            <Appear fid="2">
-              <Heading size={2} caps fit textColor="tertiary">
-                AJAX (async)
-              </Heading>
-            </Appear>
-            <Appear fid="3">
-              <Heading size={2} caps fit>
-                Single Page Applications
-              </Heading>
-            </Appear>
-            <Appear fid="3">
-              <Heading size={2} caps fit textColor="tertiary">
-                Universal JavaScript
-              </Heading>
-            </Appear>
-          </Slide>
-
-          <Slide transition={slideTransition} bgColor="black">
-            <BlockQuote>
-              <Quote>Java is to JavaScript as car is to carpet</Quote>
-            </BlockQuote>
-          </Slide>
-
-          <Slide transition={slideTransition}>
-            <Heading caps fit size={1}>
-              Build Tools
-            </Heading>
-            <Layout>
-              <Table>
-                <thead>
-                  <TableRow>
-                    <TableHeaderItem>1st Gen.</TableHeaderItem>
-                    <TableHeaderItem>2nd Gen.</TableHeaderItem>
-                    <TableHeaderItem>3rd Gen.</TableHeaderItem>
-                  </TableRow>
-                </thead>
-                <tbody>
-                  <TableRow>
-                    <TableItem>Make</TableItem>
-                    <TableItem>Grunt</TableItem>
-                    <TableItem>Browserify</TableItem>
-                  </TableRow>
-                  <TableRow>
-                    <TableItem></TableItem>
-                    <TableItem>Gulp</TableItem>
-                    <TableItem>Webpack</TableItem>
-                  </TableRow>
-                  <TableRow>
-                    <TableItem></TableItem>
-                    <TableItem>Broccoli</TableItem>
-                    <TableItem>JSPM</TableItem>
-                  </TableRow>
-                </tbody>
-              </Table>
-            </Layout>
           </Slide>
 
           <Slide transition={slideTransition}>
             <Heading size={1}>
-              The Problem of Template
+              <b>Preact</b> Briefly
             </Heading>
             <List>
-              <Appear><ListItem>Problem 1</ListItem></Appear>
-              <Appear><ListItem>Problem 2</ListItem></Appear>
-              <Appear><ListItem><Link href="https://facebook.github.io/flux/">Flux</Link> - Actions, stores, dispatcher</ListItem></Appear>
+              <Appear><ListItem>9k (minified) alternative to React with the same ES2015 API</ListItem></Appear>
+              <Appear><ListItem>No <code>React.createClass</code> or <code>propTypes</code> by default!</ListItem></Appear>
+              <Appear><ListItem>Works with JSX after adjusting</ListItem></Appear>
+              <Appear><ListItem><code>{`<input value={text} onInput={this.linkState('text')} />`}</code></ListItem></Appear>
+              <Appear><ListItem><Link href="https://www.npmjs.com/package/preact-compat">preact-compat</Link> - React compatibility layer (more APIs including <code>createClass</code> and <code>propTypes</code>)</ListItem></Appear>
             </List>
           </Slide>
 
           <Slide transition={slideTransition}>
-            <Image src={images.survivejs} margin="40px auto" height="324px" />
-          </Slide>
-
-          <Slide transition={slideTransition}>
-            <Heading size={2}>
-              Solution
-            </Heading>
-          </Slide>
-
-          <Slide transition={slideTransition}>
             <Heading size={4}>
-              Minimal Demo
+              Minimal Configuration
             </Heading>
             <CodePane
               lang="jsx"
-              source={require("raw!../examples/demo.jsx")}
+              source={require("raw!../examples/preact_config.js")}
               margin="20px auto"
             />
           </Slide>
 
           <Slide transition={slideTransition}>
+            <Heading size={1} fit caps lineHeight={1} textColor="tertiary">
+              <Link href="https://www.npmjs.com/package/react-lite">react-lite</Link>
+            </Heading>
+          </Slide>
+
+          <Slide transition={slideTransition}>
             <Heading size={1}>
-              Exercises
+              <b>react-lite</b> Briefly
             </Heading>
             <List>
-              <Appear><ListItem>Exercise 1</ListItem></Appear>
-              <Appear><ListItem>*Exercise 2</ListItem></Appear>
-              <Appear><ListItem>**Exercise 3</ListItem></Appear>
+              <Appear><ListItem>25k (minified) alternative to React with the same ES2015 API including <code>React.createClass</code></ListItem></Appear>
+              <Appear><ListItem>No <code>propTypes</code>!</ListItem></Appear>
+              <Appear><ListItem>Works only with JSX toolchain</ListItem></Appear>
+              <Appear><ListItem><b>react-tap-event-plugin</b> and <b>transform-react-inline-elements</b> gotchas</ListItem></Appear>
+              <Appear><ListItem>Use as a production level replacement for client side React</ListItem></Appear>
             </List>
+          </Slide>
+
+          <Slide transition={slideTransition}>
+            <Heading size={1} fit caps lineHeight={1} textColor="tertiary">
+              <Link href="https://www.npmjs.com/package/inferno">Inferno</Link>
+            </Heading>
+          </Slide>
+
+          <Slide transition={slideTransition}>
+            <Heading size={1}>
+              <b>Inferno</b> Briefly
+            </Heading>
+            <List>
+              <Appear><ListItem>Performance oriented evolution over React - diffs only dynamic values</ListItem></Appear>
+              <Appear><ListItem>Similar ES2015 API as in React</ListItem></Appear>
+              <Appear><ListItem>Universal rendering supported</ListItem></Appear>
+              <Appear><ListItem>More powerful stateless components than in React thanks to hooks</ListItem></Appear>
+              <Appear><ListItem><Link href="https://www.npmjs.com/package/inferno-compat">inferno-compat</Link></ListItem></Appear>
+              <Appear><ListItem>Still work in progress (no 1.0 yet)</ListItem></Appear>
+            </List>
+          </Slide>
+
+          <Slide transition={slideTransition}>
+            <Heading size={1} fit caps lineHeight={1} textColor="tertiary">
+              Comparison
+            </Heading>
+          </Slide>
+
+          <Slide transition={slideTransition}>
+            <Layout>
+              <Table>
+                <thead>
+                  <TableRow>
+                    <TableHeaderItem>Preact</TableHeaderItem>
+                    <TableHeaderItem>react-lite</TableHeaderItem>
+                    <TableHeaderItem>Inferno</TableHeaderItem>
+                  </TableRow>
+                </thead>
+                <tbody>
+                  <TableRow>
+                    <TableItem>9k</TableItem>
+                    <TableItem>25k</TableItem>
+                    <TableItem>4k</TableItem>
+                  </TableRow>
+                  <TableRow>
+                    <TableItem>ES2015 + <b>compat</b></TableItem>
+                    <TableItem>ES2015</TableItem>
+                    <TableItem>ES2015 + <b>compat</b></TableItem>
+                  </TableRow>
+                  <TableRow>
+                    <TableItem>Universal rendering</TableItem>
+                    <TableItem>No universal rendering</TableItem>
+                    <TableItem>Universal rendering</TableItem>
+                  </TableRow>
+                </tbody>
+              </Table>
+            </Layout>
           </Slide>
 
           <Slide transition={slideTransition}>
