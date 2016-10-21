@@ -1,8 +1,8 @@
 {
-  "name": "template",
+  "name": "react-compatible-alternatives",
   "private": true,
   "version": "1.0.1",
-  "description": "Template",
+  "description": "React compatible alternatives",
   "main": "lib/index.js",
   "scripts": {
     "clean": "rimraf dist",
