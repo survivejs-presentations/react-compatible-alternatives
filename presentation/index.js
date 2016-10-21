@@ -170,6 +170,25 @@ export default class Presentation extends React.Component {
           </Slide>
 
           <Slide transition={slideTransition}>
+            <Heading size={1} fit caps lineHeight={1} textColor="tertiary">
+              Conclusion
+            </Heading>
+          </Slide>
+
+          <Slide transition={slideTransition}>
+            <Heading size={1}>
+              Conclusion
+            </Heading>
+            <List>
+              <Appear><ListItem>DOM only! Vanilla React still for React Native etc.</ListItem></Appear>
+              <Appear><ListItem>Test well to find the gotchas (missing APIs etc.)</ListItem></Appear>
+              <Appear><ListItem>If size is a concern, consider these alternatives</ListItem></Appear>
+              <Appear><ListItem>Also great for small proof of concepts</ListItem></Appear>
+              <Appear><ListItem>Example: <Link href="https://webpack.js.org/">webpack 2 site</Link></ListItem></Appear>
+            </List>
+          </Slide>
+
+          <Slide transition={slideTransition}>
             <Link href="http://www.survivejs.com/">
               <Heading size={1}>
                 SurviveJS
