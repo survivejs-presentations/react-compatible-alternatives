@@ -59,7 +59,7 @@ export default class Presentation extends React.Component {
         <Deck transition={slideTransition} transitionDuration={500}>
           <Slide transition={slideTransition} bgColor="secondary">
             <Heading size={1} fit caps lineHeight={1} textColor="tertiary">
-              React Compatible Alternatives
+              <b>React</b> Compatible Alternatives
             </Heading>
           </Slide>
 
